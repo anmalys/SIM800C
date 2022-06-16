@@ -32,13 +32,13 @@ uint8_t outptr=0;   //pointer to utput data will be processed
 
 //sms data processing buffer
 uint8_t sms_number[32]={0};
-uint8_t smsbuf[MAXSMSLEN];
+//uint8_t smsbuf[MAXSMSLEN]; // unused
 uint8_t smsflag=0;
 uint8_t smslen=0;
 uint16_t smsrep=0;
 
 //gprs data processing buffer
-uint32_t rxbufd[MAXDATALEN/sizeof(int)];  //processing buffer alligned to int
+uint32_t rxbufd[MAXDATALEN/sizeof(uint32_t)];  //processing buffer alligned to uint32_t
 uint8_t* rxbuf = (uint8_t*) rxbufd; //this buffer for uint8_t
 int16_t rxlen=0; //data length in rxbuf will be processed
 

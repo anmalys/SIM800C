@@ -26,7 +26,7 @@ extern int16_t rxlen; //data length in rxbuf will be processed
 
 //sms data processing buffer
 extern uint8_t sms_number[];
-extern uint8_t smsbuf[];
+//extern uint8_t smsbuf[];
 extern uint8_t smslen;
 extern uint8_t smsflag;
 extern uint16_t smsrep;

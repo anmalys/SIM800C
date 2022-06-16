@@ -143,8 +143,8 @@ void rxprocess(int16_t len)
  else if(d1==URC1.d[U1_CONNECT]) get_connect(); //connect result
  else if(d1==URC1.d[U1_SEND]) get_send(); //send result
  else if(d0==URC0.d[U0_SHUT]) get_shut(); //shut result
- else if(d0==URC0.d[U0_BUSY])  state &= (~STATE_CALL);
- else if(d0==URC0.d[U0_NOCR]) state &= (~STATE_CALL);
+ //else if(d0==URC0.d[U0_BUSY])  state &= (~STATE_CALL);
+ //else if(d0==URC0.d[U0_NOCR]) state &= (~STATE_CALL);
  else if(d0==URC0.d[U0_CLIP]) get_clip(); //call number result
  else if(d0==URC0.d[U0_CR]) get_cr(); //Call Ready (on start once)
  else if(d0==URC0.d[U0_SR]) get_sr(); //SMS Ready (on start once)
